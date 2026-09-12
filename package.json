@@ -1,0 +1,46 @@
+{
+  "name": "abhivyakti-community",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "init": "node scripts/init-supabase.js",
+    "supabase:start": "supabase start",
+    "supabase:stop": "supabase stop",
+    "supabase:reset": "supabase db reset",
+    "supabase:migrate": "supabase db push",
+    "supabase:generate-types": "supabase gen types typescript --local > lib/types/database.ts",
+    "db:seed": "supabase seed",
+    "test:health": "curl http://localhost:3000/api/health"
+  },
+  "dependencies": {
+    "@supabase/auth-helpers-nextjs": "^0.15.0",
+    "@supabase/ssr": "^0.8.0",
+    "@supabase/supabase-js": "^2.89.0",
+    "lucide-react": "^0.294.0",
+    "next": "^14.2.35",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/jest": "^29.5.0",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "jest": "^29.5.0",
+    "jest-environment-node": "^29.5.0",
+    "postcss": "^8",
+    "supabase": "^2.70.1",
+    "tailwindcss": "^3.3.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5"
+  }
+}
